@@ -1,0 +1,712 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+/* ============================= Navigation Bar =============================== */
+nav {
+  background: #7c3030;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 180px 0px 180px;
+}
+
+nav ul {
+  display: flex;
+}
+
+.img {
+  height: 30px;
+}
+nav ul li {
+  margin-top: 4px;
+  margin-right: 20px;
+  padding-inline: 10px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+a:hover {
+  color: #f5dcaf;
+}
+
+nav .menu-btn i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+#icon1 {
+  display: none;
+}
+
+#icon2 {
+  display: none;
+}
+
+.icon_svg:hover {
+  fill: #f5dcaf;
+}
+
+.icon-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 0px 20px 0px 20px;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background-color: #7c3030;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 5;
+  }
+
+  #click:checked ~ ul {
+    right: 0%;
+  }
+
+  nav ul li {
+    margin: 30px 0;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+  }
+
+  a:hover {
+    color: #f5dcaf;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  .icon-btns {
+    display: flex;
+    justify-content: center;
+    row-gap: 100px;
+  }
+}
+/* ============================= Navigation Bar =============================== */
+
+/* ============================= Container 1 =============================== */
+
+.container1 {
+  display: flex;
+  padding: 0px 180px 40px 180px;
+  background: #7c3030;
+}
+
+.con1-col1 {
+  align-content: center;
+  padding-right: 100px;
+}
+
+.con1-col1 h1 {
+  font-size: 40px;
+  color: white;
+}
+.con1-col1 p {
+  margin-top: 25px;
+  color: white;
+  opacity: 40%;
+
+  line-height: 25px;
+}
+
+.shop-ex-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.btn1 {
+  margin-top: 25px;
+  border-style: solid;
+  border-color: #f5dcaf;
+  background-color: #f5dcaf;
+  color: #7c3030;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn1:hover {
+  color: #7c3030;
+  background-color: white;
+  border-color: white;
+}
+
+.btn2:hover {
+  color: #7c3030;
+  background-color: white;
+  border-color: white;
+}
+
+.btn2 {
+  margin-top: 25px;
+  border-style: solid;
+  border-color: #f5dcaf;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.con1-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con1-col2 img {
+  width: 70vh;
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+  transition: transform 0.6s ease;
+}
+
+@keyframes shake {
+  50% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px 25px 25px;
+  }
+
+  .con1-col1 {
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 0px;
+    order: 3;
+  }
+
+  .con1-col1 h1 {
+    font-size: 45px;
+  }
+
+  .con1-col2 {
+    order: 2;
+    width: 100%;
+  }
+
+  .con1-col2 img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ============================= Container 1 =============================== */
+
+
+
+/* ============================= Container 2 =============================== */
+
+.container2{
+  display: flex;
+  padding: 50px 180px 10px 180px;
+  background: #f5dcaf;
+  align-items: center;
+}
+
+
+.con2-col1{
+  width: 40vh;
+  position: relative;
+}
+
+
+.con2-col1 h1{
+  font-size: 30px;
+  color: #7c3030;
+}
+
+.con2-col1 p{
+  margin-top: 12px;
+}
+
+.btn1-ex{
+  margin-top: 25px;
+  border-style: solid;
+  border-color: #7c3030;
+  background-color:#7c3030;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.btn1-ex:hover{
+ color: #f5dcaf;
+
+}
+.con2-col2 {
+  display: flex;
+  gap:50px;
+  margin-left: 80px;
+
+}
+
+.product-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.product-content h3{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-content h5{
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease;
+  align-items: center;
+  grid-area: 1/1;
+  z-index: 3;
+
+}
+
+.product-main:hover{
+  transform: translateY(-30px);
+}
+
+
+
+.product-add{
+  opacity: 0%;
+}
+
+
+.product:hover .product-add{
+  opacity: 100%;
+  transition: opacity 0.5s;  
+}
+
+.product-bg{
+  opacity: 0%;
+}
+
+
+.product-main:hover .product-bg{
+  opacity: 100%;
+  transition: opacity 0.5s;  
+}
+
+.con2-col2 img{
+  height: 40vh;
+}
+
+.product-add a i{
+  font-size: 20px;  
+  background-color: #7c3030;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+
+
+.product-bg{
+  background-color: #A95C68;
+
+  margin-top: 150px;
+  padding: 325px 150px 0px 150px;
+  border-radius: 20px;
+  grid-area: 1/1;
+}
+
+.product-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items:center;
+  transition: transform 0.6s ease;
+}
+
+
+
+
+
+@media (max-width: 1200px){
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 25px 25px;
+  }
+
+  .con2-col1{
+    width: 100%;
+  }
+  
+
+  .con2-col2 {
+    display: gri;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 50px;
+    margin-left: 0;
+
+  
+  }
+
+  .product-bg{
+    background-color: #A95C68;
+  
+    margin-top: 132px;
+    padding: 325px 150px 0px 150px;
+    border-radius: 20px;
+    grid-area: 1/1;
+  }
+
+
+ 
+}
+
+
+/* ============================= Container 2 =============================== */
+
+
+/* ============================= Container 3 =============================== */
+
+.container3 {
+  display: block;
+  padding: 40px 180px 0px 180px;
+  background: #f5dcaf;
+}
+
+.con3-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.con3-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog {
+  margin-bottom: 40px;
+}
+.con3-row1 h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #7c3030;
+}
+.con3-row1 a {
+  color: #7c3030;
+  text-decoration: underline;
+}
+
+.blog-img {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 12px;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.blog-content h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.blog-content p {
+  font-size: 13px;
+}
+
+.blog {
+  transition: transform 0.6s ease;
+}
+
+.blog:hover {
+  transform: translateY(-20px);
+}
+
+@media (max-width: 1200px) {
+  .container3 {
+    display: block;
+    padding: 30px 20px 25px 20px;
+    background: #f5dcaf;
+  }
+
+  .con3-row2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .blog {
+    margin-bottom: 0px;
+  }
+
+  .blog:hover {
+    transform: translateY(20px);
+  }
+
+  .blog-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+  }
+
+  .blog:hover {
+    transform: none;
+  }
+}
+
+/* ============================= Container 3 =============================== */
+
+/* ============================= Footer =============================== */
+
+.footer {
+  display: block;
+  padding: 40px 180px 40px 180px;
+  background: #7c3030;
+}
+.ft-row2 {
+  margin-top: 15px;
+  display: flex;
+  gap: 50px;
+}
+.ft-row2-col1 {
+  width: 40vh;
+}
+
+.ft-row2-section {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.ft-row2-col2 ul {
+  display: block;
+  list-style: none;
+}
+
+.ft-row2-col1-r1 p {
+  color: #c9a1a8;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.ft-row2-col2 ul li a {
+  color: #c9a1a8;
+  font-size: 15px;
+}
+
+.ft-row2-col3 ul li a {
+  color: #c9a1a8;
+  font-size: 15px;
+}
+.ft-row2-col4 ul li a {
+  color: #c9a1a8;
+  font-size: 15px;
+}
+.ft-row2-col5 ul li a {
+  color: #c9a1a8;
+  font-size: 15px;
+}
+.ft-row2-col2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ft-row2-col3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ft-row2-col4 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ft-row2-col5 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ft-row2-col2 ul li a:hover {
+  color: white;
+}
+
+.ft-row2-col3 ul li a:hover {
+  color: white;
+}
+.ft-row2-col4 ul li a:hover {
+  color: white;
+}
+.ft-row2-col5 ul li a:hover {
+  color: white;
+}
+
+.ft-row2-col1-r2 {
+  margin-top: 20px;
+}
+
+.ft-row2-col1-r2 ul {
+  display: flex;
+  gap: 20px;
+}
+
+.ft-row2-col1-r2 ul li a i {
+  font-size: 20px;
+  background-color: white;
+  color: #7c3030;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+}
+
+hr.solid {
+  margin-top: 25px;
+  border-top: 0.5px solid #A95C68;
+  opacity: 50%;
+  
+}
+
+.ft-row4 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.ft-row4-col2 {
+  display: flex;
+  gap: 20px;
+}
+
+.ft-row4 p{
+    color: #c9a1a8;
+}
+
+.ft-row4-col2 a{
+    color: #c9a1a8;
+    font-size: 15px;
+}
+
+.ft-row4-col2 a:hover{
+    color: white;
+}
+
+
+@media (max-width: 1200px) {
+    .footer {
+        display: block;
+        padding: 30px 20px 25px 20px;
+        background: #7c3030;
+      }
+    
+    
+    
+    
+    
+    .ft-row2 {
+        
+        display: block;
+      }
+
+      .ft-row2-section{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        margin-top: 50px;
+      }
+
+      .ft-row4 {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }  
+
+      
+      
+
+}
+
